@@ -1,0 +1,100 @@
+.relative {
+    position: relative;
+}
+
+.relative img {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: 0;
+    right: 0;
+    padding-right: 3.5rem;
+
+}
+
+.linear::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    border-radius: 20px;
+    background-image: linear-gradient(to top, #ffff, #0000);
+
+}
+
+.color_content p {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(3, 46, 239);
+    padding-left: 6rem;
+    margin-top: 22rem;
+}
+
+.relative::after {
+    content: '';
+    z-index: 1;
+    color: blueviolet;
+    width: 160px;
+    position: absolute;
+    height: 160px;
+    bottom: 0rem;
+    right: -7rem;
+    background-image: url('./dot.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content {
+    padding-left: 2rem;
+    width: 80%;
+}
+
+p {
+    margin: 0;
+}
+
+.linear {
+    position: relative;
+}
+
+.content p {
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+
+}
+
+.color {
+    background-image: linear-gradient(to bottom, rgb(0, 76, 255) 50%, #fff 50%);
+}
+
+.container {
+    padding: 3rem 0rem;
+}
+
+@media(min-width:768px) and (max-width:992px) {
+    .color_content p {
+        margin-top: 19rem;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+}
+
+@media(min-width:992px) and (max-width:1200px) {
+    .color_content p {
+        margin-top: 20rem;
+    }
+
+    .content {
+        width: 90%;
+    }
+}
